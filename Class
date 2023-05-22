@@ -1,0 +1,128 @@
+Soda
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.main;
+
+/**
+ *
+ * @author Jeb
+ */
+public class Soda {
+    private int NumOfSoda;
+   
+    public void setNumOfSoda(int newNumOfSoda){
+        NumOfSoda = newNumOfSoda;
+    }
+    
+    public int getNumOfSoda(){
+        return NumOfSoda;
+    }
+
+}
+
+
+Alcohol
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.main;
+
+/**
+ *
+ * @author Jeb
+ */
+public class Alcohol {
+    private int NumOfAlcohol;
+   
+    public void setNumOfAlcohol(int newNumOfAlcohol){
+        NumOfAlcohol = newNumOfAlcohol;
+    }
+    
+    public int getNumOfAlcohol(){
+        return NumOfAlcohol;
+    }
+}
+
+Soap
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.main;
+
+/**
+ *
+ * @author Jeb
+ */
+public class Soap {
+    private int NumOfSoap;
+   
+    public void setNumOfSoap(int newNumOfSoap){
+        NumOfSoap = newNumOfSoap;
+    }
+    
+    public int getNumOfSoap(){
+        return NumOfSoap;
+    }
+    
+}
+
+Tissue Paper
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.main;
+
+/**
+ *
+ * @author Jeb
+ */
+public class TissuePaper {
+    private int NumOfTissuePaper;
+   
+    public void setNumOfTissuePaper(int newNumOfTissuePaper){
+        NumOfTissuePaper = newNumOfTissuePaper;
+    }
+    
+    public int getNumOfTissuePaper(){
+        return NumOfTissuePaper;
+    }
+    
+}
+
+Milk
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.main;
+
+/**
+ *
+ * @author Jeb
+ */
+public class Milk {
+    private int NumOfMilk;
+   
+    public void setNumOfMilk(int newNumOfMilk){
+        NumOfMilk = newNumOfMilk;
+    }
+    
+    public int getNumOfMilk(){
+        return NumOfMilk;
+    }
+    
+}
+
+
+
+
