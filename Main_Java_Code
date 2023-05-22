@@ -1,0 +1,235 @@
+
+package com.mycompany.main;
+
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Soda s = new Soda();
+        Alcohol d = new Alcohol();
+        Soap f = new Soap();
+        Milk g = new Milk();
+        TissuePaper h = new TissuePaper();
+        //
+        int NumOfSoda = 0;
+        int NumOfAlcohol = 0;
+        int NumOfSoap = 0;
+        int NumOfTissue = 0;
+        int NumOfMilk = 0;
+        int total_cost = 0;
+        boolean a = true;
+        boolean c = false;
+        //
+        do{
+        try{
+        do{
+            System.out.println("Welcome to the convienience store getStore!");
+            System.out.println("Please choose an item to buy from the list below.");
+            System.out.println("[1] Can of Soda - 2$");
+            System.out.println("[2] A bottle of alcoholic beverage - 4$");
+            System.out.println("[3] A bar of soap - 1$");
+            System.out.println("[4] 1L milk - 3$");
+            System.out.println("[5] Tissue Paper Roll - 2$");
+            System.out.println("[6] View Total");
+            System.out.println("[7] Exit");
+            
+            System.out.print("Enter your choice here: ");
+            int choice = sc.nextInt();
+            
+            if (choice >= 1 && choice <=7){
+            switch (choice){
+                case 1:
+                    System.out.print("You entered [1], how many can/s of soda do you want to buy: ");
+                    s.setNumOfSoda(sc.nextInt());
+                        NumOfSoda += s.getNumOfSoda();
+                        total_cost += s.getNumOfSoda() * 2;
+                        System.out.print("Do you want to choose again? (Yes[1] or No[2]) : ");
+                        int answer = sc.nextInt();
+
+                        if (answer == 1){
+                            a = true;
+                            break;
+                        }
+
+                        else if (answer == 2){
+                            System.out.println("Total of: ");
+                    System.out.println("Soda: " + NumOfSoda );
+                    System.out.println("Alcohol: " + NumOfAlcohol );
+                    System.out.println("Soap: " + NumOfSoap );
+                    System.out.println("Tissue: " + NumOfTissue );
+                    System.out.println("Milk: " + NumOfMilk );
+                    System.out.println("With a total cost of: " + total_cost + " Dollars" );
+                    a = false;
+                    
+                        }
+                        
+                        else {
+                            System.out.println("Please enter a valid answer, either Yes[1] or No[1].");
+                            a = true;
+                            }
+                    
+                        
+                        
+                    
+                
+                    break;
+      
+                    
+                case 2:
+                    System.out.print("You entered [2], how many can/s of alcoholic beverage do you want to buy: ");
+                    d.setNumOfAlcohol(sc.nextInt());
+                    
+                    NumOfAlcohol += d.getNumOfAlcohol();
+                    total_cost += d.getNumOfAlcohol() * 4;
+                    System.out.print("Do you want to choose again? (Yes[1] or No[2]) : ");
+                    int answer2 = sc.nextInt();
+                    
+                    if (answer2 == 1){
+                        a = true;
+                        break;
+                    }
+                    
+                    else if (answer2 == 2){
+                        System.out.println("Total of: ");
+                    System.out.println("Soda: " + NumOfSoda );
+                    System.out.println("Alcohol: " + NumOfAlcohol );
+                    System.out.println("Soap: " + NumOfSoap );
+                    System.out.println("Tissue: " + NumOfTissue );
+                    System.out.println("Milk: " + NumOfMilk );
+                    System.out.println("With a total cost of: " + total_cost + " Dollars" );
+                                        a = false;
+
+                        
+                    }
+                    else {
+                        System.out.println("Please enter a valid answer, either Yes or No.");
+                        a = true;
+                    }
+                    break;
+                case 3:
+                    System.out.print("You entered [3], how many bar/s of soap do you want to buy: ");
+                    f.setNumOfSoap(sc.nextInt());
+                    
+                    NumOfSoap += f.getNumOfSoap();
+                    total_cost += f.getNumOfSoap() * 1;
+                    System.out.print("Do you want to choose again? (Yes[1] or No[2]) : ");
+                    int answer3 = sc.nextInt();
+                    
+                    if (answer3 == 1){
+                        a = true;
+                        break;
+                    }
+                    
+                    else if (answer3 == 2){
+                        System.out.println("Total of: ");
+                    System.out.println("Soda: " + NumOfSoda );
+                    System.out.println("Alcohol: " + NumOfAlcohol );
+                    System.out.println("Soap: " + NumOfSoap );
+                    System.out.println("Tissue: " + NumOfTissue );
+                    System.out.println("Milk: " + NumOfMilk );
+                    System.out.println("With a total cost of: " + total_cost + " Dollars" );
+                                            a = false;
+
+                    }
+                    else {
+                        System.out.println("Please enter a valid answer, either Yes or No.");
+                        a = true;
+                    }
+                    break;
+                case 4:
+                    System.out.print("You entered [4], how many Litter/s of milk do you want to buy: ");
+                    g.setNumOfMilk(sc.nextInt());
+                    
+                    NumOfMilk += g.getNumOfMilk();
+                    total_cost += g.getNumOfMilk() * 3;
+                    System.out.print("Do you want to choose again? (Yes[1] or No[2]) : ");
+                    int answer4 = sc.nextInt();
+                    
+                    if (answer4 == 1){
+                        a = true;
+                        break;
+                    }
+                    
+                    else if (answer4 == 2){
+                        System.out.println("Total of: ");
+                    System.out.println("Soda: " + NumOfSoda );
+                    System.out.println("Alcohol: " + NumOfAlcohol );
+                    System.out.println("Soap: " + NumOfSoap );
+                    System.out.println("Tissue: " + NumOfTissue );
+                    System.out.println("Milk: " + NumOfMilk );
+                    System.out.println("With a total cost of: " + total_cost + " Dollars" );
+                                            a = false;
+
+                    }
+                    else {
+                        System.out.println("Please enter a valid answer, either Yes or No.");
+                        a = true;
+                    }
+                    break;
+                    
+                case 5:
+                    System.out.print("You entered [5], how many Roll/s of tissue paper do you want to buy: ");
+                    h.setNumOfTissuePaper(sc.nextInt());
+                    
+                    NumOfTissue += h.getNumOfTissuePaper();
+                    total_cost += h.getNumOfTissuePaper() * 2;
+                    System.out.print("Do you want to choose again? (Yes[1] or No[2]) : ");
+                    int answer5 = sc.nextInt();
+                    
+                    if (answer5 == 1){
+                        a = true;
+                        break;
+                    }
+                    
+                    else if (answer5 == 2){
+                    System.out.println("Total of: ");
+                    System.out.println("Soda: " + NumOfSoda );
+                    System.out.println("Alcohol: " + NumOfAlcohol );
+                    System.out.println("Soap: " + NumOfSoap );
+                    System.out.println("Tissue: " + NumOfTissue );
+                    System.out.println("Milk: " + NumOfMilk );
+                    System.out.println("With a total cost of: " + total_cost + " Dollars" );
+                                        a = false;
+
+                        
+                    }
+                    else {
+                        System.out.println("Please enter a valid answer, either Yes or No.");
+                        a = true;
+                    }
+                    break;
+                case 6:
+                    System.out.println("Total of: ");
+                    System.out.println("Soda: " + NumOfSoda );
+                    System.out.println("Alcohol: " + NumOfAlcohol );
+                    System.out.println("Soap: " + NumOfSoap );
+                    System.out.println("Tissue: " + NumOfTissue );
+                    System.out.println("Milk: " + NumOfMilk );
+                    System.out.println("With a total cost of: " + total_cost + " Dollars" );
+                    a = false;
+                    break;
+                case 7:
+                    a = false;
+                    break;
+                    
+            
+            }
+            }
+            else{
+                System.out.println("Please choose only from the menu.");
+                a = true;
+            }
+        }while(a == true);
+        
+        }
+        catch(Exception e){
+            System.out.println("Please enter a valid input.");
+            c = true;
+            
+        }
+        }while ( c == true);
+    }
+}
