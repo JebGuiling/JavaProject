@@ -10,7 +10,7 @@ package com.mycompany.main;
  *
  * @author Jeb
  */
-public class Soda {
+public class Soda extends Message {
     private int NumOfSoda;
    
     public void setNumOfSoda(int newNumOfSoda){
@@ -36,7 +36,7 @@ package com.mycompany.main;
  *
  * @author Jeb
  */
-public class Alcohol {
+public class Alcohol extends Message {
     private int NumOfAlcohol;
    
     public void setNumOfAlcohol(int newNumOfAlcohol){
@@ -60,7 +60,7 @@ package com.mycompany.main;
  *
  * @author Jeb
  */
-public class Soap {
+public class Soap extends Message{
     private int NumOfSoap;
    
     public void setNumOfSoap(int newNumOfSoap){
@@ -85,7 +85,7 @@ package com.mycompany.main;
  *
  * @author Jeb
  */
-public class TissuePaper {
+public class TissuePaper extends Message{
     private int NumOfTissuePaper;
    
     public void setNumOfTissuePaper(int newNumOfTissuePaper){
@@ -110,7 +110,7 @@ package com.mycompany.main;
  *
  * @author Jeb
  */
-public class Milk {
+public class Milk extends Message {
     private int NumOfMilk;
    
     public void setNumOfMilk(int newNumOfMilk){
@@ -123,6 +123,26 @@ public class Milk {
     
 }
 
+Message
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.main;
+
+/**
+ *
+ * @author jibug
+ */
+public class Message {
+    public static void Thankyou(){
+        System.out.println("Thank you for buying ");
+    }
+    public static void Patronage(){
+        System.out.println("Thank you for your patronage!");
+    }
+    
+}
 
 
 
