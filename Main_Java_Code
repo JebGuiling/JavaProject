@@ -42,6 +42,7 @@ public class Main {
             if (choice >= 1 && choice <=7){
             switch (choice){
                 case 1:
+                    s.Thankyou();
                     System.out.print("You entered [1], how many can/s of soda do you want to buy: ");
                     s.setNumOfSoda(sc.nextInt());
                         NumOfSoda += s.getNumOfSoda();
@@ -62,6 +63,7 @@ public class Main {
                     System.out.println("Tissue: " + NumOfTissue );
                     System.out.println("Milk: " + NumOfMilk );
                     System.out.println("With a total cost of: " + total_cost + " Dollars" );
+                    s.Patronage();
                     a = false;
                     
                         }
@@ -79,6 +81,7 @@ public class Main {
       
                     
                 case 2:
+                    d.Thankyou();
                     System.out.print("You entered [2], how many can/s of alcoholic beverage do you want to buy: ");
                     d.setNumOfAlcohol(sc.nextInt());
                     
@@ -100,7 +103,8 @@ public class Main {
                     System.out.println("Tissue: " + NumOfTissue );
                     System.out.println("Milk: " + NumOfMilk );
                     System.out.println("With a total cost of: " + total_cost + " Dollars" );
-                                        a = false;
+                    d.Patronage();
+                    a = false;
 
                         
                     }
@@ -110,6 +114,7 @@ public class Main {
                     }
                     break;
                 case 3:
+                    f.Thankyou();
                     System.out.print("You entered [3], how many bar/s of soap do you want to buy: ");
                     f.setNumOfSoap(sc.nextInt());
                     
@@ -131,8 +136,8 @@ public class Main {
                     System.out.println("Tissue: " + NumOfTissue );
                     System.out.println("Milk: " + NumOfMilk );
                     System.out.println("With a total cost of: " + total_cost + " Dollars" );
-                                            a = false;
-
+                    f.Patronage();
+                    a = false;
                     }
                     else {
                         System.out.println("Please enter a valid answer, either Yes or No.");
@@ -140,6 +145,7 @@ public class Main {
                     }
                     break;
                 case 4:
+                    g.Thankyou();
                     System.out.print("You entered [4], how many Litter/s of milk do you want to buy: ");
                     g.setNumOfMilk(sc.nextInt());
                     
@@ -161,8 +167,8 @@ public class Main {
                     System.out.println("Tissue: " + NumOfTissue );
                     System.out.println("Milk: " + NumOfMilk );
                     System.out.println("With a total cost of: " + total_cost + " Dollars" );
-                                            a = false;
-
+                    g.Patronage();
+                    a = false;                           
                     }
                     else {
                         System.out.println("Please enter a valid answer, either Yes or No.");
@@ -171,6 +177,7 @@ public class Main {
                     break;
                     
                 case 5:
+                    h.Thankyou();
                     System.out.print("You entered [5], how many Roll/s of tissue paper do you want to buy: ");
                     h.setNumOfTissuePaper(sc.nextInt());
                     
@@ -192,8 +199,8 @@ public class Main {
                     System.out.println("Tissue: " + NumOfTissue );
                     System.out.println("Milk: " + NumOfMilk );
                     System.out.println("With a total cost of: " + total_cost + " Dollars" );
-                                        a = false;
-
+                    h.Patronage();
+                    a = false;                                
                         
                     }
                     else {
